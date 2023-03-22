@@ -1,0 +1,43 @@
+#act {{([Diving-]{6} [around-]{6} (.*), [the terrifying death's head growls deeply-]{41})\.}} {
+	update_chat {%2};
+} {1};
+#act {{([Screaming-]{9} [in-]{2} [rage-]{4} [at-]{2} (.*), [the skull races around the room-]{31})\.}} {
+	update_chat {%2};
+} {1};
+#act {{([Screaming-]{9} [through-]{7} [the room, the death's head growls at-]{36} (.*))\.}} {
+	update_chat {%2};
+} {1};
+#act {{([Seething-]{8} [with-]{4} [venomous anger, the death's head howls at-]{41} (.*))\.}} {
+	update_chat {%2};
+} {1};
+#act {{([Snarling-]{8} [at-]{2} (.*), [the skull gashes its teeth in anger-]{36})\.}} {
+	update_chat {%2};
+} {1};
+#act {{([The-]{3} [ghostly-]{7} [skull bobs and weaves around-]{28} (.*), [growling-]{8} [fiercely-]{8})\.}} {
+	update_chat {%2};
+} {1};
+#act {{([The-]{3} [ghostly-]{7} [skull races around the room, circling-]{37} (.*) [menacingly-]{10})\.}} {
+	update_chat {%2};
+} {1};
+#act {{([The-]{3} [skull-]{5} [dives quickly towards-]{21} (.*) [but narrowly misses-]{19})\.}} {
+	update_chat {%2};
+} {1};
+#act {{([With-]{4} [a-]{1} [horrid-]{6} [grin of death, the ghostly skull leers at-]{41} (.*))\.}} {
+	update_chat {%2};
+} {1};
+#act {{([With-]{4} [pure-]{4} [hatred, the skull bares its fangs and hisses at-]{47} (.*))\.}} {
+	update_chat {%2};
+} {1};
+
+#act {{([You-]{3}) ([cal-]{4}) ([forth-]{5}) (.*)}} {
+    update_chat {%2 %3 %4 %5};
+} {1};
+#act {{([magic-]{5})\.(?>\s+)([Crumbling-]{9}) ([away-]{4}) (.*)}} {
+    update_chat {%2 %3 %4 %5};
+} {1};
+#act {{([released-]{8}) ([in-]{2}) ([the-]{3}) (.*)}} {
+    update_chat {%2 %3 %4 %5};
+} {1};
+#act {{([room-]{4},) ([leaving-]{7}) ([behind-]{6}) (.*)}} {
+    update_chat {%2 %3 %4 %5};
+} {1};
