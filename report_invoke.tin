@@ -28,9 +28,12 @@
 #act {{([With-]{4} [pure-]{4} [hatred, the skull bares its fangs and hisses at-]{47} (.*))\.}} {
 	update_chat {%2};
 } {1};
-
 #act {{([You-]{3}) ([cal-]{4}) ([forth-]{5}) (.*)}} {
     update_chat {%2 %3 %4 %5};
+} {1};
+enough experience to raise your HP max.
+#act {{([You-]{3}) ([cal-]{4}) ([forth-]{5}) ([a-]{1}) ([word-]{4}) ([of-]{2}) ([great-]{5}) (.*)}} {
+    update_chat {%2 %3 %4 %5 %6 %7 %8 %9};
 } {1};
 #act {{([magic-]{5})\.(?>\s+)([Crumbling-]{9}) ([away-]{4}) (.*)}} {
     update_chat {%2 %3 %4 %5};
